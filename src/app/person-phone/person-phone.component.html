@@ -1,0 +1,11 @@
+<ng-container *ngIf="(personPhone$ | async) as personPhone; else loading">
+
+    <h1>{{ personPhone.PhoneNumber }}</h1>
+    <!--<div>{{ blogPost.body }}</div>
+    <ul>
+      <li>{{ blogPost.creator }}</li>
+      <li>{{ blogPost.dt }}</li>
+    </ul>
+  !-->
+  </ng-container>
+  <ng-template #loading>Loading…</ng-template>
